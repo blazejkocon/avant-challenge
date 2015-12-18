@@ -2,6 +2,8 @@
 
 #factors_and_caching (ruby)
 
+**Run factors_and_caching.rb in the command line (ruby factors_and_caching.rb)**
+
 Accomplish in a language of your choice:
 
 Input: Given an array of integers
@@ -21,7 +23,11 @@ Additional Questions:
 of the cache look like?  By cache I mean, given an array input, skip the calculation of the output if you have already
 calculated the output at least once already.
 
+**Answer:** My implementation of a cache uses memoization to store and access the factorizations calculated from the given array. In the event of duplicates, memoization would speed up the method by considering that some of the calculations would be skipped. In my specific case, the use of caching(memoization) did not affect the run time since the arrays were composed of unique integers.
+
 2.  What is the performance of your caching implementation?  Is there any way to make it more performant.
+
+**Answer:** My implementation which uses ruby dictionaries (hash maps) has a linear run time. As mentioned before, my example uses arrays the don’t have any duplicates. The performance can be improved, for instance, through the use of more efficient factoring algorithms or by having sorted arrays. Sorting the arrays would speed up the search for duplicates. More efficient data structures can also be used to reduce run time(i.e. Struct vs Hash).
 
 3.  What if you wanted to reverse the functionality.  What if you wanted to output each integer and all the other integers in the 
 array that is the first integer is a factor of I.E:
@@ -33,7 +39,11 @@ Would this change your caching algorithim?
 
 With caching, the output should be the same except the calculations are not performed.
 
+**Answer:** In my code you would replace “if num1%num2 ==0 and num1!=num2” with “if num2%num1 ==0 and num1!=num2”. This changes the nested loop to see whether the first number is a factor of the second number (num2%num1==0). Everything else would remain the same including the caching algorithm.
+
 #twitter_test (python w/ Python Twitter Tools library for handling the API)
+
+**Run twitter_test.py in the command line (python twitter_test.py)**
 
 As a quick tech evaluation I'd like you to use the Twitter streaming API (statuses/sample) to collect 5 minutes of tweets.
  Obtain a total word count, filter out "stop words" (words like "and", "the", "me", etc -- useless words),
