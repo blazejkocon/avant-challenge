@@ -43,7 +43,7 @@ With caching, the output should be the same except the calculations are not perf
 
 #twitter_test (python w/ Python Twitter Tools library for handling the API)
 
-**Run twitter_test.py in the command line (python twitter_test.py)**
+**Run twitter_test.py in the command line (python twitter_test.py). This will output the ten most frequent words from the stream**
 
 As a quick tech evaluation I'd like you to use the Twitter streaming API (statuses/sample) to collect 5 minutes of tweets.
  Obtain a total word count, filter out "stop words" (words like "and", "the", "me", etc -- useless words),
