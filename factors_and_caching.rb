@@ -12,7 +12,8 @@ def factorize(arr)
     end
 end
 
-#the memoize function checks to see whether we have a cached value if we don't have the value, the value is placed in the cache and then the result is returned.
+#the memoize function checks to see whether we have a cached value. if we don't have the value, 
+#the value is placed in the cache and then the result is returned.
 def memoize(fn)
     cache = {} 
     lambda {|*args|
