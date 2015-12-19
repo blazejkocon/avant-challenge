@@ -22,8 +22,18 @@ end
 
 #this function makes use of the of memoize (caching) function for duplicate values
 memoize def caching_factorize(arr)
-    factorize(arr)
+    arr.each do |num1|
+        factorarray =[]
+        print "Factors of #{num1}: "
+        arr.each do |num2|
+            if num1%num2 ==0 and num1!=num2
+                factorarray.push(num2) unless factorarray.include?(num2)
+            end
+        end
+        print "#{factorarray}\n"
+    end
 end
+
 
 #test cases
 puts "\nRegular factorization without the use of caching"
