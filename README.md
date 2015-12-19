@@ -27,7 +27,7 @@ calculated the output at least once already.
 
 2.  What is the performance of your caching implementation?  Is there any way to make it more performant.
 
-**Answer:** My implementation, which uses ruby dictionaries (hash maps), has a linear run time. As mentioned before, my example uses arrays the don’t have any duplicates. The performance can be improved, for instance, through the use of more efficient factoring algorithms or by having sorted arrays. Sorting the arrays would speed up the search for duplicates. More efficient data structures can also be used to reduce run time(i.e. Struct vs Hash).
+**Answer:** My implementation, which uses ruby dictionaries (hash maps), has a linear run time. As mentioned before, my example uses arrays that don’t have any duplicates. The performance can be improved, for instance, through the use of more efficient factoring algorithms or by having sorted arrays. Sorting the arrays would speed up the search for duplicates. More efficient data structures can also be used to reduce run time(i.e. Struct vs Hash).
 
 3.  What if you wanted to reverse the functionality.  What if you wanted to output each integer and all the other integers in the 
 array that is the first integer is a factor of I.E:
