@@ -22,6 +22,7 @@ def memoize(fn)
 end
 
 #this function makes use of the of memoize (caching) function for duplicate values
+#the algorithm remains the same as the factorize method
 memoize def caching_factorize(arr)
     factorize(arr)
 end
