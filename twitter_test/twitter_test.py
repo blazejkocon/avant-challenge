@@ -5,7 +5,7 @@ import sys
 from twitter import Twitter, OAuth, TwitterHTTPError, TwitterStream
 
 
-#redirect output to out.txt for further use
+#redirect output to output1.txt for further use
 f = open("output1.txt", "w")
 sys.stdout = f
 
